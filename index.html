@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India- Watch TV Shows Online, Watch Movies Online</title>
+    
+   
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        :root {
+            --font: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            height: 90vh;
+            background-image: url(/assets/bg\ img.jpg);
+            position: relative;
+            z-index: 1;
+
+
+        }
+
+        .box {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 0;
+            z-index: 2;
+
+
+        }
+
+        header {
+            margin: 0px 40px;
+            padding: 20px 35px;
+
+        }
+
+        .logo {
+            color: red;
+            position: absolute;
+            z-index: 10;
+            height: 36px;
+        }
+
+        .lang {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            width: 100px;
+            position: absolute;
+            z-index: 10;
+            right: 150px;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 3px 7px 3px 7px;
+            font-family: var(--font);
+        }
+
+        .signin {
+            position: absolute;
+            right: 80px;
+            background-color: red;
+            color: white;
+            z-index: 10;
+            padding: 6px 10px 6px 10px;
+            font-size: 13px;
+            border-radius: 5px;
+            font-family: var(--font);
+            font-weight: 500;
+
+        }
+
+        .tagline {
+            position: absolute;
+            z-index: 10;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            width: 700px;
+        }
+
+        main {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tag1 {
+            font-size: 50px;
+            font-family: var(--font);
+            font-weight: 1000;
+            width: 600px;
+        }
+
+        .tag2 {
+            font-family: var(--font);
+            font-weight: bolder;
+            font-size: 18px;
+        }
+
+        .tag3 {
+            font-family: var(--font);
+        }
+
+        .email input {
+
+            height: 50px;
+            width: 320px;
+            background-color: rgba(0, 0, 0, 0.44);
+            border: 0.5px solid rgba(224, 210, 210);
+            padding: 0px 10px;
+
+        }
+
+        .email input::placeholder {
+            color: rgb(210, 198, 198);
+            font-size: 16px;
+        }
+
+        .email {
+            width: 600px;
+            justify-content: center;
+            display: flex;
+            gap: 20px;
+        }
+
+        .getstarted {
+            display: flex;
+            align-items: center;
+            background-color: red;
+            padding: 10px 15px;
+            font-family: var(--font);
+            font-weight: bolder;
+            border-radius: 5px;
+            width: 170px;
+            justify-content: center;
+            font-size: larger;
+        }
+
+       
+
+       
+         .gradient{
+            position: absolute;
+            background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+            width: 100vw;
+            z-index: 20;
+            height: 80px;
+         }
+         .trendingnow{
+            position: absolute;
+            bottom: 0;
+            color: white;
+            left: 160px;
+            font-size: 20px;
+            font-family: var(--font);
+            font-weight: bold;
+         }
+         .trending{
+            height: 280px;
+            position: relative;
+            padding:  70px 160px;
+            background-color: black;
+            
+            
+         }
+         .trending2{
+            padding: 50px 0px;
+           display: flex;
+            align-items:flex-end;
+            gap: 30px;
+            overflow-x: auto;
+         }
+         .trending img{
+            height: 230px;
+            position: relative;
+            z-index: 10;
+            border-radius: 5px;
+         }
+         
+
+
+         .rank{
+            color: black;
+            font-size: 90px;
+            position: absolute;
+            bottom: 0;
+            left: 0 ;
+            z-index: 20;
+            font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+            text-shadow:  -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+            
+         }
+        
+
+
+         .class{
+            position: relative;
+            flex: 0 0 auto;
+         }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <img src="/assets/logo.svg" alt="" class="logo">
+            <select name="lang" class="lang">
+                <option value="English"> English</option>
+            </select>
+            <div class="signin">
+                Sign In
+            </div>
+
+
+        </header>
+        <div class="box">
+        </div>
+        <main>
+            <div class="tagline">
+
+                <h1 class="tag1">Unlimited movies, TV shows and more </h1>
+
+
+                <p class="tag2">Starts at ₹149. Cancel at any time.</p>
+                <br>
+                <p class="tag3">Ready to watch? Enter your email to create or restart your membership. </p>
+                <div class="email">
+                    <input type="email" placeholder="Email address">
+                    <div class="getstarted">Get Started <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            width="20" height="24" color="#FFFFFF" fill="none">
+                            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></div>
+                </div>
+
+            </div>
+        </main>
+       
+    </div>
+    <div class="gradient">
+        <!-- put this where you want the divider -->
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 1680 100"
+       preserveAspectRatio="none"
+       style="display:block; width:100%; height:50px;">
+    <!-- black filled curve -->
+    <path d="M0 0v100c356-90 1324-90 1680 0V0H0z" fill="#000" fill-opacity="0.7"/>
+    <!-- red stroked curve on top -->
+    <path d="M0 100c356-90 1324-90 1680 0"
+          fill="none"
+          stroke="#e50914"
+          stroke-width="4"
+          stroke-linecap="round"
+          vector-effect="non-scaling-stroke"/>
+  </svg>
+       <p class="trendingnow">Trending Now</p>
+
+    </div> 
+    <div class="trending">
+        <div class="trending2">
+        <div class="class">
+        <img src="/assets/wednesday.webp" > 
+        <span class="rank">1</span>
+        </div>  
+         <div class="class">
+        <img src="/assets/kapilsharma.webp">
+        <span class="rank">2</span>
+        </div>
+         <div class="class">
+        <img src="/assets/raid.webp">
+        <span class="rank">3</span>
+        </div>
+         <div class="class">
+        <img src="/assets/squidgame.webp">
+        <span class="rank">4</span>
+        </div>
+         <div class="class">
+        <img src="/assets/sare jahan se acha.webp">
+        <span class="rank">5</span>
+        </div>
+        <div class="class">
+            <img src="/assets/mandala murders.webp">
+            <span class="rank">6</span>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>
